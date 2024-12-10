@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#employment">Employment</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+    
+    <section class="profile-section">
+        <div class="content">
+            <p class="greeting">Hello,</p>
+            <h1 class="name">Piyush Badlia</h1>
+            <p class="role">Frontend Developer</p>
+            <button class="hire-me-btn">Hire me</button>
+            <div class="contact-info">
+                <p><i class="fa-solid fa-location-dot fa-beat"></i> New Delhi, India</p>
+                <p><i class="fa-solid fa-phone fa-shake"></i> 9289843262</p>
+                <p><i class="fa-solid fa-envelope fa-fade"></i> piyushbadlia26@gmail.com</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="profile.jpeg" alt="Profile Picture" class="profile-picture">
+            <a href="www.linkedin.com/in/piyush-sain-46aaa422a"><img src="linkedin.png" class="small-image image1" alt="Image 1"></a>
+            <a href="https://github.com/"><img src="github.jpeg" class="small-image image2" alt="Image 2"></a>
+            <a href="#"><img src="mail.png" class="small-image image3" alt="Image 3"></a>
+            <div class="circle-gradient"></div>
+        </div>
+    </section>
+
+    <body>
+        <!-- Contact Form Container -->
+        <div class="overlay" id="overlay"></div>
+
+        <div class="contact-form-container" id="contactForm">
+            <div class="contact-form-content">
+                <h2>Contact Me</h2>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="62a175af-0949-4c5a-870f-7d2ee183e1f1">
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                
+                    <button type="submit">Send Message</button>
+                </form>
+                <button class="close-btn" onclick="closeForm()">Close</button>
+            </div>
+        </div>    
+
+
+    <div class="section-container profile-description" id="profile">
+        <h2 class="section-title">Profile</h2>
+        <p class="description-text">
+            Experienced Software Developer with expertise in design, installation, testing, and maintenance of software systems. 
+            Proficient across multiple platforms, languages, and embedded systems. Demonstrates strong ability to manage independent 
+            projects while excelling in collaborative team environments.
+        </p>
+    </div>
+
+    <div class="section-container employment-history" id="employment">
+        <h2 class="section-title">Employment History</h2>
+        <div class="job-entry">
+            <h3 class="job-title">Coding Educator</h3>
+            <p class="company-info">Scope for Change - Sep 2023- Jan 2024</p>
+            <ul class="job-responsibilities">
+                <li>Developed a comprehensive curriculum for a coding boot camp that covered the fundamentals of web development and
+                    software engineering.</li>
+                <li>Developed a series of coding challenges to assess student progress and identify areas of improvement.</li>
+            </ul>
+
+            <br>
+
+            <h3 class="job-title">Resource Allocator</h3>
+            <p class="company-info">Aashman Foundation - Jan 2023- Apr 2023</p>
+            <ul class="job-responsibilities">
+                <li>Developed project plans that included timelines, milestones, and resource allocation to ensure successful project
+                    completion.</li>
+                <li>Worked with project managers to develop and implement strategies for cost savings and resource optimization.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-container education-section" id="education">
+        <h2 class="section-title">Education</h2>
+    
+        <div class="education-item">
+            <h3>BS Degree in Data Science and Applications</h3>
+            <p>Indian Institute of Technology, Madras</p>
+            <p>1/2024 - 1/2025</p>
+            <p>Grade: N.A</p>
+        </div>
+
+        <div class="education-item">
+            <h3>M.Sc. Computer Science</h3>
+            <p>South Asian University, Delhi</p>
+            <p>8/2024 - 12/2026</p>
+            <p>Grade: N.A</p>
+        </div>
+    
+        <div class="education-item">
+            <h3>B.Sc. Computer Science</h3>
+            <p>Keshav Mahavidyalaya, University of Delhi, Delhi</p>
+            <p>9/2021 - 6/2024</p>
+            <p>Grade: 8.2/10</p>
+        </div>
+    
+        <div class="education-item">
+            <h3>Class 12</h3>
+            <p>Kendriya Vidyalaya, New Delhi</p>
+            <p>5/2020 - 12/2021</p>
+            <p>Grade: 89.6%</p>
+        </div>
+    
+        <div class="education-item">
+            <h3>Class 10</h3>
+            <p>Kendriya Vidyalaya, New Delhi</p>
+            <p>5/2019 - 12/2020</p>
+            <p>Grade: 90.6%</p>
+        </div>
+    </div>
+    
+
+    <div class="section-container skills-section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <span>Python</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="--progress: 85%;"></div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span>MySQL</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="--progress: 80%;"></div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span>CSS</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="--progress: 95%;"></div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span>HTML</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="--progress: 95%;"></div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span>JavaScript</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="--progress: 85%;"></div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span>Bootstrap</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="--progress: 75%;"></div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span>Figma</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="--progress: 80%;"></div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span>Shopify</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="--progress: 75%;"></div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-container projects-section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3 class="project-title">Music Website</h3>
+                <p class="project-description">
+                    This website is a web application designed for laptops and desktops. It features a structured layout with distinct sections for managing songs, navigating through menus, and controlling playback through a master play panel. The interface is user-friendly, ensuring easy access to its functionalities for an enhanced user experience.
+                </p>
+                <a href="https://hilarious-conkies-60fe7f.netlify.app/atif" class="view-project-btn">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">Weather Forecasting Application</h3>
+                <p class="project-description">
+                    A dynamic weather application using HTML, CSS, and JavaScript, integrating APIs to show live weather data for any city, state, or country.
+                </p>
+                <a href="https://piyush-badlia.github.io/weather-application/" class="view-project-btn">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">Frontend Page of Amazon.com</h3>
+                <p class="project-description">
+                    Designed and implemented an e-commerce page similar to Amazon, using HTML and CSS, showcasing skills in creating responsive interfaces.
+                </p>
+                <a href="https://piyush-badlia.github.io/amazon-page/" class="view-project-btn">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <a href="https://github.com/yourprofile" target="_blank" class="footer-icon">
+            <img src="github.jpeg" alt="GitHub">
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="footer-icon">
+            <img src="linkedin.png" alt="LinkedIn">
+        </a>
+    </footer>
+    
+
+   <script src="app.js"></script>
+
+    
+</body>
+</html>
